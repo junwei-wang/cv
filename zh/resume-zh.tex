@@ -1,0 +1,163 @@
+% !Mode:: "TeX:UTF-8"
+% +-----------------------------------------------------------------------------
+% | File: resume-zh
+% | Author: huxuan
+% | E-mail: i(at)huxuan.org
+% | Created: 2012-12-18
+% | Last modified: 2013-03-16
+% | Description:
+% |     A Chinese Resume Example in LaTeX based on resumecls
+% |
+% | Copyrgiht (c) 2012-2013 by huxuan. All rights reserved.
+% +-----------------------------------------------------------------------------
+
+\documentclass[zh,color]{resumecls}
+\name{王军委 Junwei Wang}
+\organization{山东大学计算机科学与技术学院}
+\address{山东省济南市舜华路1500号，250101}
+\mobile{+352 661 604 629}
+\mail{i.junwei.wang@gmail.com}
+\homepage{https://github.com/junwei-wang}
+%\resumeurl{http://example.com/resume-zh.pdf}
+\usepackage{etoolbox}
+\patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
+
+\begin{document}
+
+\begin{table}[ht]
+
+\maketitle
+\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\heading{教育经历}
+\entry{2em}{Xrp{8em}}{
+    \textbf{山东大学} & 济南 & 2008/09-2015/06 \\
+}
+\entry{4em}{lXX}{
+    学士 & 软件学院 & 软件工程 \\
+    硕士 & 计算机科学与技术学院 & 计算机应用技术 \\
+}
+
+\entry{2em}{Xrp{8em}}{
+    \heiti{卢森堡大学} & 卢森堡& 2013/09-2014/10 \\
+}
+\entry{4em}{lXX}{
+  {硕士} & 科学、技术与通讯系 & 信息与计算机科学\\
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\heading{科研经历}
+\entry{2em}{Xp{8em}}{
+    \heiti{山东大学计算机科学与技术学院} & 2012/02-2012/06 \\
+}
+\entry{4em}{X}{信息安全实验室  \quad }
+\entry{6em}{X}{
+    \texttt{密文策略基于属性加密的研究}
+    \\ \textsf{\small 指导教师}\quad \href{http://isec.sdu.edu.cn/?p=401}{徐秋亮}教授和\href{http://isec.sdu.edu.cn/?p=797}{胡程瑜}讲师 \\
+}
+\entry{2em}{Xp{8em}}{
+    \heiti{卢森堡大学科学、技术与通讯系} & 2014/03-2014/09 \\
+}
+\entry{4em}{X}{算法、密码学与安全实验室  \quad }
+\entry{6em}{X}{
+    \texttt{抗高阶差分能量分析的AES方案研究}， 并发表论文\cite{AES}\\
+    \textsf{\small 指导教师} \quad 著名密码学家\href{http://jscoron.fr}{Jean-S\'{e}bastien Coron}教授和\href{http://wwwen.uni.lu/research/fstc/computer_science_and_communications_research_unit/members/johann_groszschaedl}{Johann Groszsch\"{a}dl}博士 \\
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\heading{工作经历}
+\entry{2em}{Xp{8em}}{
+    \textbf{Eyespage} & 2014/12至今 \\
+}
+\entry{4em}{X}{系统工程师}
+\entry{6em}{X}{
+   \texttt{1、API设计开发；}\\
+   \texttt{2、系统架构与运维； }\\
+   \texttt{3、安卓客户端用户位置追踪与分析。 }
+}
+\entry{2em}{Xp{8em}}{
+    \heiti{北京百度网讯科技有限公司} & 2011/08-2012/01 \\
+}
+\entry{4em}{X}{运维部\ 用户访问质量组（UAQ） \quad 实习生}
+\entry{6em}{X}{
+   \texttt{1、维护UAQ既有的流量展示以及异常报警系统；}\\
+   \texttt{2、研发针对百度各个产品线流量分析、异常检测、性能优化平台的，涉及数据采集、分析、处理、存储、展示等所有过程。 }
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\heading{项目经历}
+\entry{2em}{Xp{24em}}{
+    \textbf{CP-ABE} & \url{http://junwei-wang.github.io/cpabe/} \\
+}
+\entry{4em}{X}{\texttt{密文策略基于属性加密的Java实现}}
+\entry{2em}{Xp{24em}}{
+    \textbf{DPA Countermasure of AES on ARM NEON}
+}
+\entry{4em}{X}{\texttt{抵抗高阶差分能量分析的高级加密标准方案在ARM处理器上使用NEON指令集的高效实现}}
+\end{table}
+
+\begin{table}[ht!]
+\entry{2em}{Xp{24em}}{
+    \textbf{DNS Cache} & \url{http://github.com/gmsh/dnscache}
+}
+\entry{4em}{X}{\texttt{一个百度提供学生课题：通过缓存应对持续高并发DNS请求的解决方案}}
+\entry{2em}{Xp{24em}}{
+    \textbf{biginteger} & \url{http://github.com/junwei-wang/biginteger}
+}
+\entry{4em}{X}{\texttt{C语言版本高效大整数算法以及应用示例：朴素RSA实现}}
+\entry{4em}{X}{\texttt{在Gentoo主机下搭建LAMP环境，使用vsftpd搭建FTP服务器}}
+\entry{2em}{Xp{24em}}{
+    \textbf{课程设计、学生课题以及其他项目}
+}
+\entry{4em}{Xp{24em}}{
+$\bullet$ \texttt{DGHV全同态加密}  & \url{http://github.com/junwei-wang/FHE-DGHV}\\
+$\bullet$ \texttt{Simple SWU algorithm} & \url{http://github.com/junwei-wang/Simple-SWU}\\
+$\bullet$ \texttt{朴素RSA签名} & \url{http://github.com/junwei-wang/Plain-RSA-Signature}\\
+$\bullet$ \texttt{Vernam-Cipher} & \url{http://github.com/junwei-wang/Vernam-Cipher}\\
+$\bullet$ \texttt{PHPBookmark} & \url{https://github.com/junwei-wang/PHPbookmark}\\
+$\bullet$ \texttt{PHPOnlineShoppingCart} & \url{https://github.com/junwei-wang/OnlineBookShoppingCart}\\
+$\bullet$ \texttt{Java局域网文件分享}\\
+$\bullet$ \texttt{B+树的C++实现}\\
+$\bullet$ \texttt{学生信息管理系统}\\
+$\bullet$ \texttt{网络流量监控系统}\\
+
+}
+\entry{4em}{X}{
+$\bullet$ \texttt{基于NachOS的操作系统功能实现等}\\
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\heading{专业技能}
+\entry{2em}{lX}{
+    熟悉 & \texttt{Linux，Vim，C，PHP，Python，Perl，Java，ARM NEON Assembly，MySQL，Cryptography基本理论与算法(如AES、RSA等)，初等数论与高等代数；} \\
+    使用 & \texttt{Git，Matlab/Octave，Python，Shell，C++，Scala，\LaTeX 等。} \\
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\heading{校园经历}
+%\entry{2em}{Xp{8em}}{
+%    经历1 & 起止时间 \\
+%    经历2 & 起止时间 \\
+%}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\heading{获得荣誉}
+%\entry{2em}{Xr}{
+%    荣誉1 & 颁发时间 \\
+%    荣誉2 & 颁发时间 \\
+%}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 如果不需要发表成果，注释这一段即可
+%\heading{附：发表成果}
+\bibliography{resume}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{8em}
+\end{table}
+\end{document}
