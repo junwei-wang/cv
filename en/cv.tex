@@ -1,0 +1,161 @@
+\documentclass{res}
+%\usepackage{helvetica}
+%\usepackage{newcent}
+\usepackage{amssymb}
+
+\newsectionwidth{0pt}  % So the text is not indented under section headings
+\usepackage{fancyhdr}  % use this package to get a 2 line header
+\renewcommand{\headrulewidth}{0pt} % suppress line drawn by default by fancyhdr
+\setlength{\headheight}{24pt} % allow room for 2-line header
+\setlength{\headsep}{24pt}  % space between header and text
+\setlength{\headheight}{24pt} % allow room for 2-line header
+\pagestyle{fancy}     % set pagestyle for document
+%\rhead{ {\it J. Wang}\\{\it p. \thepage} } % put text in header (right side)
+%\cfoot{}                                     % the foot is empty
+\topmargin=-0.5in % start text higher on the page
+
+\begin{document}
+% Center the name over the entire width of resume:
+ \moveleft.5\hoffset\centerline{\large\bf Junwei WANG}
+% Draw a horizontal line the whole width of resume:
+ \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
+% address begins here
+% Again, the address lines must be centered over entire width of resume:
+\moveleft.5\hoffset\centerline{No. 1 Baidu Ke Ji Yuan,}
+\moveleft.5\hoffset\centerline{10 Xi Bei Wang Dong Lu, Haidian Qu,}
+\moveleft.5\hoffset\centerline{Beijing, China, 100094}
+\moveleft.5\hoffset\centerline{i.junwei.wang@gmail.com}
+\moveleft.5\hoffset\centerline{(+86) 185-1898-5736}
+\newcommand\ignore[1]{}
+
+\begin{resume}
+
+\ignore{
+\section{OBJECTIVE}
+A position in the field of technology and computers with special
+interests in cryptographic analysis, business applications programming,
+information processing, management systems and so on. 
+}
+
+\vspace{0.2in}
+\section{\centerline{EDUCATION}}
+\vspace{15pt}
+{\sl Master in Information and Computer Science}  \hfill
+September 2013 - September 2014 \\
+{\bf University of Luxembourg}, Luxembourg City, Luxembourg\\
+Concentration: {\em Cryptography and Side-Channel Analysis}\\
+%GPA: 17.08/20
+
+{\sl Master of Computer Science and Technology}  \hfill
+September 2012 - June 2015 \\
+{\bf Shandong University}, Jinan City, Shandong Province, China \\
+Concentration: {\em Cryptography and Security}
+
+{\sl Bachelor of Software Engineer}  \hfill
+September 2008 - June 2012 \\
+{\bf Shandong University}, Jinan City, Shandong Province, China \\
+%GPA: 89.35/100
+
+\vspace{0.2in}
+\section{\centerline{MASTER THESIS}}
+\vspace{15pt}
+{\sl Efficient Implementation of High-Order DPA Countermeasures for the AES
+using the ARM NEON Instruction Set}, under the supervision of
+Ass. Prof. Jean-S\'{e}bastien Coron
+
+
+\vspace{0.2in}
+\section{\centerline{WORKING EXPERIENCE}}
+\vspace{15pt}
+{\sl R\&D Engineer} \hfill July 2015 - now \\
+{\bf Baidu Inc.}, Beijing, China \\
+In charge of the workflow of creating knowledge graphs by processing of web
+crawled data in the Searching Service Group, including,
+\begin{itemize}  \itemsep -2pt
+  \item Developing and maintaining a cleanse system (based on open source
+    code) dealing with messy data: cleaning, transforming and extending it;
+  \item Developing and maintaining the platform designing for R\&D engineers
+    and outsourced staffs to build meaningful knowledge graphs inspired by
+    structured or semi-structured data;
+  \item Developing an adapter system to match the interfaces between the
+    crawling system and its downstream systems, etc.
+\end{itemize}
+
+{\sl R\&D Engineer (Intern)} \hfill December 2014 - May 2015 \\
+{\bf Eyespage}, Beijing, China
+\begin{itemize}  \itemsep -2pt
+  \item Designed and developed the API.
+  \item Developed a spider to crawl data from Google Play Store by using the
+    Scrapy framework.
+  \item Operated and monitored with Elastic-Logstash-Kibana stack, Zabbix and
+    so on.
+  \item Co-designed the system architecture.
+\end{itemize}
+
+{\sl R\&D Engineer (Intern)} \hfill August 2011 - January 2012 \\
+{\bf Baidu Inc.}, Beijing, China
+\begin{itemize}  \itemsep -2pt
+  \item Developed a ``user friendly" monitoring and warning system for
+    online services of Baidu, mainly focusing on obtaining, processing and
+    displaying data.
+\end{itemize}
+
+
+
+\ignore{
+\section{COMPUTER \\ SKILLS}
+{\sl Languages \& Software:} C, C++, PHP, Perl, Java, ARM NEON Assembly,
+Python, Shell Script, Scala   Vim, MySQL, Matlab/Octave, LAMP and so on. \\
+{\sl Operating Systems:} Linux.
+}
+
+
+\vspace{0.2in}
+\section{\centerline{COMPUTER SKILLS}}
+\vspace{15pt}
+\begin{itemize}
+  \item Solid skills in programming, especially in Java and Python programming
+    languages, also using Shell Scripts, PHP, C, C\verb!++!, Perl, Scala, ARM
+    NEON Assembly;
+  \item Familiar with Unix-like operating systems;
+  \item Familiar with distributed computing frameworks, e.g., Hadoop, HBase and
+    Kafka;
+  \item Familiar with popular relational database and NoSql databases, e.g.,
+    MySql, Redis, Elasticsearch and so on.
+\end{itemize}
+
+\vspace{0.2in}
+\section{\centerline{LANGUAGES}}
+\vspace{15pt}
+\begin{itemize}
+  \item Chinese (mother tough)
+  \item English (intermediate)
+\end{itemize}
+
+\ignore{
+\section{\centerline{HOBBIES}}
+Reading, swimming and cycling.
+}
+
+\vspace{0.2in}
+\section{\centerline{WEBSITES}}
+\vspace{15pt}
+\begin{itemize}
+  \item {\bf Github} https://github.com/junwei-wang
+  \item {\bf LinkedIn} https://www.linkedin.com/in/junweiwang
+  %\item {\bf Blog} http://hotfixs.com
+\end{itemize}
+
+\vspace{0.2in}
+\section{\centerline{PUBLICATIONS}}
+\vspace{15pt}
+[1] Junwei Wang, Praveen Kumar Vadnala, Johann Gro{\ss}sch{\"a}dl, and Qiuliang Xu.
+Higher-Order Masking in Practice: A Vector Implementation of Masked AES for
+ARM NEON. In Kaisa Nyberg, editor, {\em The Cryptographer’s Track at the RSA
+Conference 2015. Proceedings}, volume 9048 of {\em Lecture Notes in Computer
+Science}, pages 181{–}198. Springer, 2015.
+
+\end{resume}
+
+\end{document}
+
