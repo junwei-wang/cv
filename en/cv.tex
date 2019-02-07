@@ -1,8 +1,12 @@
 \documentclass{res}
-%\usepackage{helvetica}
-%\usepackage{newcent}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[sc]{mathpazo}
+\linespread{1.05}         % Palladio needs more leading (space between lines)
+\usepackage[T1]{fontenc}
+
 \usepackage{amssymb}
 \usepackage{bibentry}
+\usepackage{hyperref}
 
 \newsectionwidth{0pt}  % So the text is not indented under section headings
 \usepackage{fancyhdr}  % use this package to get a 2 line header
@@ -15,74 +19,67 @@
 %\cfoot{}                                     % the foot is empty
 \topmargin=-0.5in % start text higher on the page
 
+\def\ctitle#1#2#3{\emph{\textcolor{Maroon}{#1}}\hfill#2 - #3 \smallskip\\}
+
 \begin{document}
-% Center the name over the entire width of resume:
- \moveleft.5\hoffset\centerline{\large\bf Junwei WANG}
-% Draw a horizontal line the whole width of resume:
- \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
-% address begins here
-% Again, the address lines must be centered over entire width of resume:
-\moveleft.5\hoffset\centerline{2 Allée Joseph Lalande}
-\moveleft.5\hoffset\centerline{94000 Cr\'{e}teil, France}
-\moveleft.5\hoffset\centerline{junwei.wang@cryptoexperts.com}
+\moveleft.5\hoffset\centerline{\Large\bf Junwei WANG}
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
+\moveleft.5\hoffset\centerline{41 Boulevard des Capucines}
+\moveleft.5\hoffset\centerline{75002 Paris, France}
+\moveleft.5\hoffset\centerline{\href{mailto:junwei.wang@cryptoexperts.com}{junwei.wang@cryptoexperts.com}}
 \moveleft.5\hoffset\centerline{(+33) 7 69 39 52 85}
-\moveleft.5\hoffset\centerline{http://junwei.co}
+\moveleft.5\hoffset\centerline{\href{https://junwei.co}{https://junwei.co}}
 \newcommand\ignore[1]{}
 
 \begin{resume}
 
-\ignore{
-\section{OBJECTIVE}
-A position in the field of technology and computers with special
-interests in cryptographic analysis, business applications programming,
-information processing, management systems and so on. 
-}
-
-%\vspace{0.2in}
-\section{\centerline{EDUCATION}}
-\vspace{15pt}
-\emph{Ph.D. Candidate in White-Box Cryptography}  \hfill
-April 2017 - Now \\
-{\bf University of Paris 8} \hfill Saint-Denis, France
-
-{\emph{Master in Information and Computer Science}}  \hfill
-September 2013 - September 2014 \\
-{\bf University of Luxembourg} \hfill Luxembourg City, Luxembourg\\
-Thesis: \textsl{Efficient Implementation of High-Order DPA Countermeasures for the AES
-using the ARM NEON Instruction Set}, under the supervision of Prof. Jean-S\'{e}bastien Coron
-
-{\em Master of Computer Science and Technology}  \hfill
-September 2012 - June 2015 \\
-{\bf Shandong University}, Jinan, China
-
-{\em Bachelor of Software Engineer}  \hfill
-September 2008 - June 2012 \\
-{\bf Shandong University}, Jinan, China
-
-\ignore{
-\vspace{0.2in}
-\section{\centerline{MASTER THESIS}}
-\vspace{15pt}
-{\sl Efficient Implementation of High-Order DPA Countermeasures for the AES
-using the ARM NEON Instruction Set}, under the supervision of
-Ass. Prof. Jean-S\'{e}bastien Coron
-}
-
-\vspace{0.2in}
-\section{\centerline{WORKING EXPERIENCE}}
-\emph{Ph.D. Candidate} \hfill April 2017 - now \\
-{\bf CryptoExperts}, Paris, France \\
+\section{\large \centerline{EDUCATION}}
+\bigskip
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ctitle{Ph.D. Candidate in Cryptography}{April 2017}{Now}
+\textbf{CryptoExperts SAS}, Paris, France \\
+\textbf{University of Luxembourg}, Esch-sur-Alzette, Luxembourg\\
+\textbf{University Paris 8}, Saint-Denis, France
+\smallskip \\
 My research interests is white-box cryptography.
-My thesis is under the supervisor of Prof. Jean-S\'{e}bastien Coron, Prof. Sihem Mesnager,
-Dr. Pascal Paillier, and Dr. Matthieu Rivain.
+My thesis is under the supervisor of
+Prof. \href{http://www.crypto-uni.lu/jscoron/index.html}{Jean-S\'{e}bastien Coron},
+Prof. \href{http://www.math.univ-paris13.fr/~mesnager/}{Sihem Mesnager},
+Dr. \href{https://scholar.google.com/citations?user=xwzhjfoAAAAJ&hl=en}{Pascal Paillier},
+and Dr. \href{http://www.matthieurivain.com/}{Matthieu Rivain}.
 I am an ECRYPT-NET fellow and receive funding from the European Union’s Horizon 2020 research and
 innovation programme under the Marie Skłodowska-Curie grant agreement No. 643161.
+\bigskip \\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ctitle{Master in Information and Computer Science}{September 2013}{September 2014}
+\textbf{University of Luxembourg}, Luxembourg City, Luxembourg
+\smallskip\\
+Thesis entitled \textsl{Efficient Implementation of High-Order DPA Countermeasures for the AES
+  using the ARM NEON Instruction Set}, under the supervision of
+Prof. \href{http://www.crypto-uni.lu/jscoron/index.html}{Jean-S\'{e}bastien Coron}.
+\bigskip \\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ctitle{Master of Computer Science and Technology}{September 2012}{June 2015}
+\textbf{Shandong University}, Jinan, China
+\bigskip\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ctitle{Bachelor of Software Engineer}{September 2008}{June 2012}
+\textbf{Shandong University}, Jinan, China
+\bigskip
 
-\emph{Senior Software Engineer} \hfill July 2015 - April 2017 \\
-{\bf Baidu Inc.}, Beijing, China \\
+\section{\large\centerline{WORKING EXPERIENCE}}
+\bigskip
+\ctitle{Research Intern}{April 2018}{July 2018}
+\textbf{Riscure B.V.}, Delft, the Netherlands
+\medskip\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ctitle{Senior Software Engineer}{July 2015}{April 2017}
+\textbf{Baidu Inc.}, Beijing, China
+\smallskip\\
 I was at Knowledge Graph Department. My job was design and development of
 systems for efficient production of knowledge data.
-
+\medskip\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \ignore{
 In charge of the workflow of creating knowledge graphs by processing of web
 crawled data in the Searching Service Group, including,
@@ -94,11 +91,11 @@ crawled data in the Searching Service Group, including,
     structured or semi-structured data;
   \item Developing an adapter system to match the interfaces between the
     crawling system and its downstream systems, etc.
-\end{itemize}
-
-{\sl R\&D Engineer (Intern)} \hfill December 2014 - May 2015 \\
-{\bf Eyespage}, Beijing, China
-\begin{itemize}  \itemsep -2pt
+  \end{itemize}
+}
+\ctitle{R\&D Engineer (Intern)}{December 2014}{May 2015}
+\textbf{Eyespage}, Beijing, China \\\vspace{-3.5pt}
+\begin{itemize}  \itemsep -1pt
   \item Designed and developed the API.
   \item Developed a spider to crawl data from Google Play Store by using the
     Scrapy framework.
@@ -106,15 +103,15 @@ crawled data in the Searching Service Group, including,
     so on.
   \item Co-designed the system architecture.
 \end{itemize}
-
-{\sl R\&D Engineer (Intern)} \hfill August 2011 - January 2012 \\
-{\bf Baidu Inc.}, Beijing, China
+%\medskip
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ctitle{R\&D Engineer (Intern)}{August 2011}{January 2012}
+\textbf{Baidu Inc.}, Beijing, China
 \begin{itemize}  \itemsep -2pt
   \item Developed a ``user friendly" monitoring and warning system for
     online services of Baidu, mainly focusing on obtaining, processing and
     displaying data.
 \end{itemize}
-}
 
 
 \ignore{
@@ -153,9 +150,8 @@ Python, Shell Script, Scala   Vim, MySQL, Matlab/Octave, LAMP and so on. \\
 \end{itemize}
 }
 
-\vspace{0.2in}
-\section{\centerline{PUBLICATIONS}}
-\vspace{15pt}
+\section{\large\centerline{PUBLICATIONS}}
+\bigskip
 [1] Junwei Wang, Praveen Kumar Vadnala, Johann Gro{\ss}sch{\"a}dl, and Qiuliang Xu.
 Higher-Order Masking in Practice: A Vector Implementation of Masked AES for
 ARM NEON. In Kaisa Nyberg, editor, {\em The Cryptographer’s Track at the RSA
@@ -163,7 +159,7 @@ Conference 2015. Proceedings}, volume 9048 of {\em Lecture Notes in Computer
 Science}, pages 181{–}198. Springer, 2015.
 
 \vspace{0.2in}
-\section{\centerline{LANGUAGES}}
+\section{\large \centerline{LANGUAGES}}
 \vspace{15pt}
 \begin{itemize}
   \item \emph{Chinese} (mother tongue) and \emph{English} (work proficiency)
