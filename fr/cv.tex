@@ -1,0 +1,187 @@
+% \listfiles
+\documentclass{res}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[sc]{mathpazo}
+\linespread{1.05}         % Palladio needs more leading (space between lines)
+\usepackage[T1]{fontenc}
+
+\usepackage{amssymb}
+\usepackage{hyperref}
+\pagestyle{empty}
+
+\newsectionwidth{0pt}  % So the text is not indented under section headings
+\usepackage{fancyhdr}  % use this package to get a 2 line header
+\renewcommand{\headrulewidth}{0pt} % suppress line drawn by default by fancyhdr
+\setlength{\headheight}{24pt} % allow room for 2-line header
+\setlength{\headsep}{24pt}  % space between header and text
+\setlength{\headheight}{24pt} % allow room for 2-line header
+\pagestyle{fancy}     % set pagestyle for document
+%\rhead{ {\it J. Wang}\\{\it p. \thepage} } % put text in header (right side)
+%\cfoot{}                                     % the foot is empty
+\topmargin=-0.5in % start text higher on the page
+
+\def\ctitle#1#2#3{\emph{\textcolor{Maroon}{#1}}\hfill#2 - #3 \smallskip\\}
+
+\usepackage{biblatex}
+\addbibresource{cryptobib/abbrev3.bib}
+\addbibresource{cryptobib/crypto.bib}
+
+
+\begin{document}
+\moveleft.5\hoffset\centerline{\Large\bf Junwei WANG}
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
+\moveleft.5\hoffset\centerline{2 All\'ee Joseph Lalande}
+\moveleft.5\hoffset\centerline{94000 Cr\'eteil, France}
+\moveleft.5\hoffset\centerline{\href{mailto:i.junwei.wang@cryptoexperts.com}{i.junwei.wang@cryptoexperts.com}}
+\moveleft.5\hoffset\centerline{(+33) 7 69 39 52 85}
+\newcommand\ignore[1]{}
+
+\begin{resume}
+
+\section{\large \centerline{\'EDUCATION}}
+\bigskip
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ctitle{Candidat au doctorat en informatique}{avril 2017}{juillet 2020 (attendu)}
+\textbf{CryptoExperts SAS}, \`a Paris, France \\
+\textbf{University of Luxembourg}, \`a Esch-sur-Alzette, Luxembourg\\
+\textbf{University Paris 8}, \`a Saint-Denis, France
+\smallskip \\
+Je travaille sur la cryptographie en boîte blanche.
+Ma thèse est sous la direction de
+Prof. \href{http://www.crypto-uni.lu/jscoron/index.html}{Jean-S\'{e}bastien Coron},
+et Prof. \href{http://www.math.univ-paris13.fr/~mesnager/}{Sihem Mesnager},
+et Dr. \href{https://scholar.google.com/citations?user=xwzhjfoAAAAJ&hl=en}{Pascal Paillier},
+et Dr. \href{http://www.matthieurivain.com/}{Matthieu Rivain}.
+Je reçois un financement du projet ANR.
+\bigskip \\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ctitle{Master en informatique}{septembre 2012}{juin 2014}
+\textbf{University of Luxembourg}, \`a Luxembourg, Luxembourg\\
+\textbf{Shandong University}, \`a Jinan, Chine
+\smallskip\\
+Thèse intitulée \guillemotleft{}\emph{Efficient Implementation of High-Order DPA
+Countermeasures for the AES using the ARM NEON Instruction Set}\guillemotright{},
+sous la direction de
+Prof. \href{http://www.crypto-uni.lu/jscoron/index.html}{Jean-S\'{e}bastien Coron}.
+\bigskip \\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ctitle{Diplôme d'ing\'enieur}{septembre 2008}{juin 2012}
+\textbf{Shandong University}, \`a Jinan, Chine
+\bigskip
+
+\section{\large\centerline{\textsc{EXP\'ERIENCE DE TRAVAIL}}}
+\bigskip
+\ctitle{Stagiaire de recherche}{avril 2018}{juillet 2018}
+\textbf{Riscure B.V.}, \`a Delft, les Pays-Bas
+\medskip\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ctitle{Ing\'enieur senior}{juillet 2015}{avril 2017}
+\textbf{Baidu Inc.}, \`a Beijing, Chine
+\smallskip\\
+J'\'etais au d\'epartement Knowledge Graph.
+Mon travail consistait \`a concevoir et d\'evelopper des syst\`emes pour
+production de donn\'ees sur les connaissances.
+\medskip\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ignore{
+In charge of the workflow of creating knowledge graphs by processing of web
+crawled data in the Searching Service Group, including,
+\begin{itemize}  \itemsep -2pt
+  \item Developing and maintaining a cleanse system (based on open source
+    code) dealing with messy data: cleaning, transforming and extending it;
+  \item Developing and maintaining the platform designing for R\&D engineers
+    and outsourced staffs to build meaningful knowledge graphs inspired by
+    structured or semi-structured data;
+  \item Developing an adapter system to match the interfaces between the
+    crawling system and its downstream systems, etc.
+  \end{itemize}
+}
+\ignore{
+\ctitle{Stagiaire de recherche et de d\'eveloppement}{d\'ecembre 2014}{mai 2015}
+\textbf{Eyespage}, Beijing, China %\vspace{-3.5pt}
+\begin{itemize}  \itemsep -1pt
+  \item Designed and developed the AI.
+  \item Developed a spider to crawl data from Google Play Store by using the
+    Scrapy framework.
+  \item Operated and monitored with Elastic-Logstash-Kibana stack, Zabbix and
+    so on.
+  \item Co-designed the system architecture.
+\end{itemize}
+\medskip\\%
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ctitle{Stagiaire de recherche et de d\'eveloppement}{ao\^ut 2011}{janvier 2012}
+\textbf{Baidu Inc.}, \`a Beijing, China
+\ignore{
+\begin{itemize}  \itemsep -2pt
+  \item Developed a ``user friendly" monitoring and warning system for
+    online services of Baidu, mainly focusing on obtaining, processing and
+    displaying data.
+\end{itemize}
+}
+
+\ignore{
+\section{COMPUTER \\ SKILLS}
+{\sl Languages \& Software:} C, C++, PHP, Perl, Java, ARM NEON Assembly,
+Python, Shell Script, Scala   Vim, MySQL, Matlab/Octave, LAMP and so on. \\
+{\sl Operating Systems:} Linux.
+}
+
+\ignore{
+
+\vspace{0.2in}
+\section{\centerline{COMPUTER SKILLS}}
+\vspace{15pt}
+\begin{itemize}
+  \item Solid skills in programming, especially in Java and Python programming
+    languages, also using Shell Scripts, PHP, C, C\verb!++!, Perl, Scala, ARM
+    NEON Assembly;
+  \item Familiar with Unix-like operating systems;
+  \item Familiar with distributed computing frameworks, e.g., Hadoop, HBase and
+    Kafka;
+  \item Familiar with popular relational database and NoSql databases, e.g.,
+    MySql, Redis, Elasticsearch and so on.
+  \end{itemize}
+  }
+
+
+\ignore{
+\vspace{0.2in}
+\section{\centerline{WEBSITES}}
+\vspace{15pt}
+\begin{itemize}
+\item {\bf Homepage} http://junwei.co
+\item {\bf Github} https://github.com/junwei-wang
+\item {\bf LinkedIn} https://www.linkedin.com/in/junweiwang
+\end{itemize}
+}
+
+\section{\large\centerline{PUBLICATIONS}}
+\bigskip
+
+
+\hphantom{\cite{COSADE:BRVW19}
+\cite{RSA:WVGX15}
+\cite{TCHES:RivWan19}
+\cite{EPRINT:GPRW18}}
+\printbibliography[heading=none,title=~]
+
+
+\vspace{0.2in}
+\section{\large \centerline{LANGUES}}
+\vspace{15pt}
+\begin{itemize}
+\item \textbf{Chinois} (\emph{mother tongue})
+\item \textbf{Anglais} (\emph{comp\'etence professionnelle})
+\item \textbf{Fran\c cais} (\emph{comp\'etence acquise de niveau A2.1})
+\end{itemize}
+
+\end{resume}
+
+\end{document}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
