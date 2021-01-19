@@ -1,3 +1,4 @@
+% \listfiles
 \documentclass{res}
 \usepackage[dvipsnames]{xcolor}
 \usepackage[sc]{mathpazo}
@@ -5,8 +6,8 @@
 \usepackage[T1]{fontenc}
 
 \usepackage{amssymb}
-\usepackage{bibentry}
-\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
+\pagestyle{empty}
 
 \newsectionwidth{0pt}  % So the text is not indented under section headings
 \usepackage{fancyhdr}  % use this package to get a 2 line header
@@ -15,11 +16,14 @@
 \setlength{\headsep}{24pt}  % space between header and text
 \setlength{\headheight}{24pt} % allow room for 2-line header
 \pagestyle{fancy}     % set pagestyle for document
-%\rhead{ {\it J. Wang}\\{\it p. \thepage} } % put text in header (right side)
-%\cfoot{}                                     % the foot is empty
 \topmargin=-0.5in % start text higher on the page
 
 \def\ctitle#1#2#3{\emph{\textcolor{Maroon}{#1}}\hfill#2 - #3 \smallskip\\}
+
+\usepackage[sorting=ynt,maxbibnames=10]{biblatex}
+\addbibresource{cryptobib/abbrev3.bib}
+\addbibresource{cryptobib/crypto.bib}
+
 
 \begin{document}
 \moveleft.5\hoffset\centerline{\Large\bf Junwei WANG}
@@ -28,15 +32,16 @@
 \moveleft.5\hoffset\centerline{75002 Paris, France}
 \moveleft.5\hoffset\centerline{\href{mailto:junwei.wang@cryptoexperts.com}{junwei.wang@cryptoexperts.com}}
 \moveleft.5\hoffset\centerline{(+33) 7 69 39 52 85}
-\moveleft.5\hoffset\centerline{\href{https://junwei.co}{https://junwei.co}}
+\moveleft.5\hoffset\centerline{\href{https://jwa.ng}{https://jwa.ng}}
 \newcommand\ignore[1]{}
+
 
 \begin{resume}
 
 \section{\large \centerline{EDUCATION}}
 \bigskip
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\ctitle{Ph.D. Candidate in Cryptography}{April 2017}{Now}
+\ctitle{Ph.D. in Cryptography}{April 2017}{June 2020}
 \textbf{CryptoExperts SAS}, Paris, France \\
 \textbf{University of Luxembourg}, Esch-sur-Alzette, Luxembourg\\
 \textbf{University Paris 8}, Saint-Denis, France
@@ -47,7 +52,7 @@ Prof. \href{http://www.crypto-uni.lu/jscoron/index.html}{Jean-S\'{e}bastien Coro
 Prof. \href{http://www.math.univ-paris13.fr/~mesnager/}{Sihem Mesnager},
 Dr. \href{https://scholar.google.com/citations?user=xwzhjfoAAAAJ&hl=en}{Pascal Paillier},
 and Dr. \href{http://www.matthieurivain.com/}{Matthieu Rivain}.
-I am an ECRYPT-NET fellow and receive funding from the European Union’s Horizon 2020 research and
+I am an ECRYPT-NET fellow and received funding from the European Union’s Horizon 2020 research and
 innovation programme under the Marie Skłodowska-Curie grant agreement No. 643161.
 \bigskip \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -69,6 +74,10 @@ Prof. \href{http://www.crypto-uni.lu/jscoron/index.html}{Jean-S\'{e}bastien Coro
 
 \section{\large\centerline{WORKING EXPERIENCE}}
 \bigskip
+\ctitle{Cryptography Experts}{July 2020}{\hspace{1.5cm}}
+\textbf{Riscure B.V.}, Delft, the Netherlands
+\medskip\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \ctitle{Research Intern}{April 2018}{July 2018}
 \textbf{Riscure B.V.}, Delft, the Netherlands
 \medskip\\
@@ -93,16 +102,16 @@ crawled data in the Searching Service Group, including,
     crawling system and its downstream systems, etc.
   \end{itemize}
 }
-\ctitle{R\&D Engineer (Intern)}{December 2014}{May 2015}
-\textbf{Eyespage}, Beijing, China \\\vspace{-3.5pt}
-\begin{itemize}  \itemsep -1pt
-  \item Designed and developed the API.
-  \item Developed a spider to crawl data from Google Play Store by using the
-    Scrapy framework.
-  \item Operated and monitored with Elastic-Logstash-Kibana stack, Zabbix and
-    so on.
-  \item Co-designed the system architecture.
-\end{itemize}
+% \ctitle{R\&D Engineer (Intern)}{December 2014}{May 2015}
+% \textbf{Eyespage}, Beijing, China \\\vspace{-3.5pt}
+% \begin{itemize}  \itemsep -1pt
+%   \item Designed and developed the API.
+%   \item Developed a spider to crawl data from Google Play Store by using the
+%     Scrapy framework.
+%   \item Operated and monitored with Elastic-Logstash-Kibana stack, Zabbix and
+%     so on.
+%   \item Co-designed the system architecture.
+% \end{itemize}
 %\medskip
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \ctitle{R\&D Engineer (Intern)}{August 2011}{January 2012}
@@ -152,17 +161,21 @@ Python, Shell Script, Scala   Vim, MySQL, Matlab/Octave, LAMP and so on. \\
 
 \section{\large\centerline{PUBLICATIONS}}
 \bigskip
-[1] Junwei Wang, Praveen Kumar Vadnala, Johann Gro{\ss}sch{\"a}dl, and Qiuliang Xu.
-Higher-Order Masking in Practice: A Vector Implementation of Masked AES for
-ARM NEON. In Kaisa Nyberg, editor, {\em The Cryptographer’s Track at the RSA
-Conference 2015. Proceedings}, volume 9048 of {\em Lecture Notes in Computer
-Science}, pages 181{–}198. Springer, 2015.
+
+\hphantom{\cite{TCHES:GouRivWan20}
+\cite{JCEng:GPRW20}
+\cite{EPRINT:GPRW18}
+\cite{COSADE:BRVW19}
+\cite{RSA:WVGX15}}
+\printbibliography[heading=none,title=~]
 
 \vspace{0.2in}
 \section{\large \centerline{LANGUAGES}}
 \vspace{15pt}
 \begin{itemize}
-  \item \emph{Chinese} (mother tongue) and \emph{English} (work proficiency)
+\item \textbf{Chinois} (\emph{mother tongue})
+\item \textbf{Anglais} (\emph{work proficiency})
+\item \textbf{Fran\c cais} (\emph{B1.1})
 \end{itemize}
 
 \end{resume}

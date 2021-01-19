@@ -1,0 +1,9 @@
+[submodule "fr/cryptobib"]
+	path = fr/cryptobib
+	url = https://github.com/cryptobib/export
+[submodule "cryptobib"]
+	path = cryptobib
+	url = https://github.com/cryptobib/export
+[submodule "en/cryptobib"]
+	path = en/cryptobib
+	url = https://github.com/cryptobib/export

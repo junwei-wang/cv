@@ -1,0 +1,278 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{ynt/global//global/global}
+    \entry{RSA:WVGX15}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=d718aa52fa2ca9a05a7e657b30cbef00}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Junwei},
+           giveni={J\bibinitperiod}}}%
+        {{hash=db8afc526f083da76ef9552aab9c67cb}{%
+           family={Vadnala},
+           familyi={V\bibinitperiod},
+           given={Praveen\bibnamedelima Kumar},
+           giveni={P\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=5046f4962d868592fcb3bcb4a4701e5e}{%
+           family={Gro{ß}schädl},
+           familyi={G\bibinitperiod},
+           given={Johann},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c2f3bad366a92b38312c16df05f50b63}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Qiuliang},
+           giveni={Q\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=ce716ddb9b0c06fb134bfeb446f0077a}{%
+           family={Nyberg},
+           familyi={N\bibinitperiod},
+           given={Kaisa},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer, Heidelberg}%
+      }
+      \strng{namehash}{ef06736179ac7535c95b707d7a51d735}
+      \strng{fullhash}{d1ed36a2530f9594adb1c71a25520deb}
+      \strng{bibnamehash}{d1ed36a2530f9594adb1c71a25520deb}
+      \strng{authorbibnamehash}{d1ed36a2530f9594adb1c71a25520deb}
+      \strng{authornamehash}{ef06736179ac7535c95b707d7a51d735}
+      \strng{authorfullhash}{d1ed36a2530f9594adb1c71a25520deb}
+      \strng{editorbibnamehash}{ce716ddb9b0c06fb134bfeb446f0077a}
+      \strng{editornamehash}{ce716ddb9b0c06fb134bfeb446f0077a}
+      \strng{editorfullhash}{ce716ddb9b0c06fb134bfeb446f0077a}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{CT-RSA~2015}
+      \field{month}{4}
+      \field{series}{{LNCS}}
+      \field{title}{Higher-Order Masking in Practice: {A} Vector Implementation of Masked {AES} for {ARM} {NEON}}
+      \field{volume}{9048}
+      \field{year}{2015}
+      \field{pages}{181\bibrangedash 198}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1007/978-3-319-16715-2_10
+      \endverb
+    \endentry
+    \entry{EPRINT:GPRW18}{misc}{}
+      \name{author}{4}{}{%
+        {{hash=26573f76f5b5c40c6dfc0f07263e4618}{%
+           family={Goubin},
+           familyi={G\bibinitperiod},
+           given={Louis},
+           giveni={L\bibinitperiod}}}%
+        {{hash=c77e6f958b91a9ee6ddc9d92d55bbbbd}{%
+           family={Paillier},
+           familyi={P\bibinitperiod},
+           given={Pascal},
+           giveni={P\bibinitperiod}}}%
+        {{hash=139c256f346d2392d6b04876a74446b5}{%
+           family={Rivain},
+           familyi={R\bibinitperiod},
+           given={Matthieu},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d718aa52fa2ca9a05a7e657b30cbef00}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Junwei},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{7f4ceb36a1e68f097288621837d94088}
+      \strng{fullhash}{d803e2bf499c3186b47cc9c636829c64}
+      \strng{bibnamehash}{d803e2bf499c3186b47cc9c636829c64}
+      \strng{authorbibnamehash}{d803e2bf499c3186b47cc9c636829c64}
+      \strng{authornamehash}{7f4ceb36a1e68f097288621837d94088}
+      \strng{authorfullhash}{d803e2bf499c3186b47cc9c636829c64}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Cryptology ePrint Archive, Report 2018/098}
+      \field{note}{\url{https://eprint.iacr.org/2018/098}}
+      \field{title}{How to Reveal the Secrets of an Obscure White-Box Implementation}
+      \field{year}{2018}
+    \endentry
+    \entry{COSADE:BRVW19}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=8e97e7a694c5daffce12d708ce1d7bc1}{%
+           family={Bogdanov},
+           familyi={B\bibinitperiod},
+           given={Andrey},
+           giveni={A\bibinitperiod}}}%
+        {{hash=139c256f346d2392d6b04876a74446b5}{%
+           family={Rivain},
+           familyi={R\bibinitperiod},
+           given={Matthieu},
+           giveni={M\bibinitperiod}}}%
+        {{hash=722bfa5a167b04212e6febb9c6d3dded}{%
+           family={Vejre},
+           familyi={V\bibinitperiod},
+           given={Philip\bibnamedelima S.},
+           giveni={P\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=d718aa52fa2ca9a05a7e657b30cbef00}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Junwei},
+           giveni={J\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=e2ecaa1b4568012c3424d5bc8dbb788c}{%
+           family={Polian},
+           familyi={P\bibinitperiod},
+           given={Ilia},
+           giveni={I\bibinitperiod}}}%
+        {{hash=c081e1758ad06236d93e498be8bb4074}{%
+           family={Stöttinger},
+           familyi={S\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer, Heidelberg}%
+      }
+      \strng{namehash}{c4aab895cc96878b084e631c33fa51ee}
+      \strng{fullhash}{3d9cf4c224fe600c7052ad75b0b1a4e5}
+      \strng{bibnamehash}{3d9cf4c224fe600c7052ad75b0b1a4e5}
+      \strng{authorbibnamehash}{3d9cf4c224fe600c7052ad75b0b1a4e5}
+      \strng{authornamehash}{c4aab895cc96878b084e631c33fa51ee}
+      \strng{authorfullhash}{3d9cf4c224fe600c7052ad75b0b1a4e5}
+      \strng{editorbibnamehash}{64920cc1893766da0a97e55b8e2bbe6c}
+      \strng{editornamehash}{64920cc1893766da0a97e55b8e2bbe6c}
+      \strng{editorfullhash}{64920cc1893766da0a97e55b8e2bbe6c}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{COSADE 2019}
+      \field{month}{4}
+      \field{series}{{LNCS}}
+      \field{title}{Higher-Order {DCA} against Standard Side-Channel Countermeasures}
+      \field{volume}{11421}
+      \field{year}{2019}
+      \field{pages}{118\bibrangedash 141}
+      \range{pages}{24}
+      \verb{doi}
+      \verb 10.1007/978-3-030-16350-1_8
+      \endverb
+    \endentry
+    \entry{JCEng:GPRW20}{article}{}
+      \name{author}{4}{}{%
+        {{hash=26573f76f5b5c40c6dfc0f07263e4618}{%
+           family={Goubin},
+           familyi={G\bibinitperiod},
+           given={Louis},
+           giveni={L\bibinitperiod}}}%
+        {{hash=c77e6f958b91a9ee6ddc9d92d55bbbbd}{%
+           family={Paillier},
+           familyi={P\bibinitperiod},
+           given={Pascal},
+           giveni={P\bibinitperiod}}}%
+        {{hash=139c256f346d2392d6b04876a74446b5}{%
+           family={Rivain},
+           familyi={R\bibinitperiod},
+           given={Matthieu},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d718aa52fa2ca9a05a7e657b30cbef00}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Junwei},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer, Heidelberg}%
+      }
+      \strng{namehash}{7f4ceb36a1e68f097288621837d94088}
+      \strng{fullhash}{d803e2bf499c3186b47cc9c636829c64}
+      \strng{bibnamehash}{d803e2bf499c3186b47cc9c636829c64}
+      \strng{authorbibnamehash}{d803e2bf499c3186b47cc9c636829c64}
+      \strng{authornamehash}{7f4ceb36a1e68f097288621837d94088}
+      \strng{authorfullhash}{d803e2bf499c3186b47cc9c636829c64}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Cryptographic Engineering}
+      \field{month}{4}
+      \field{number}{1}
+      \field{title}{How to reveal the secrets of an obscure white-box implementation}
+      \field{volume}{10}
+      \field{year}{2020}
+      \field{pages}{49\bibrangedash 66}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1007/s13389-019-00207-5
+      \endverb
+    \endentry
+    \entry{TCHES:GouRivWan20}{article}{}
+      \name{author}{3}{}{%
+        {{hash=26573f76f5b5c40c6dfc0f07263e4618}{%
+           family={Goubin},
+           familyi={G\bibinitperiod},
+           given={Louis},
+           giveni={L\bibinitperiod}}}%
+        {{hash=139c256f346d2392d6b04876a74446b5}{%
+           family={Rivain},
+           familyi={R\bibinitperiod},
+           given={Matthieu},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d718aa52fa2ca9a05a7e657b30cbef00}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Junwei},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Ruhr-Universität Bochum}%
+      }
+      \strng{namehash}{9a0eec999a33bfb68332bdb85c75fe52}
+      \strng{fullhash}{9a0eec999a33bfb68332bdb85c75fe52}
+      \strng{bibnamehash}{9a0eec999a33bfb68332bdb85c75fe52}
+      \strng{authorbibnamehash}{9a0eec999a33bfb68332bdb85c75fe52}
+      \strng{authornamehash}{9a0eec999a33bfb68332bdb85c75fe52}
+      \strng{authorfullhash}{9a0eec999a33bfb68332bdb85c75fe52}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2569-2925}
+      \field{journaltitle}{{IACR} {TCHES}}
+      \field{note}{\url{https://tches.iacr.org/index.php/TCHES/article/view/8597}}
+      \field{number}{3}
+      \field{title}{Defeating State-of-the-Art White-Box Countermeasures}
+      \field{volume}{2020}
+      \field{year}{2020}
+      \field{pages}{454\bibrangedash 482}
+      \range{pages}{29}
+      \verb{doi}
+      \verb 10.13154/tches.v2020.i3.454-482
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
